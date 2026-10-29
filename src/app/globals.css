@@ -1,0 +1,87 @@
+@import "tailwindcss";
+:root {
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: #0c1018;
+  color: #e6ecf5;
+  font-family: Arial, sans-serif;
+}
+button,
+select,
+input {
+  font: inherit;
+}
+button,
+select {
+  cursor: pointer;
+  border: 1px solid #344155;
+  border-radius: 8px;
+  background: #1b2637;
+  padding: 9px 13px;
+}
+button:hover {
+  background: #284466;
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #56aeff;
+  outline-offset: 3px;
+}
+input,
+select {
+  width: 100%;
+}
+label {
+  display: block;
+  margin: 20px 0;
+  font-size: 13px;
+  color: #aebed3;
+}
+input {
+  margin-top: 10px;
+}
+h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #9eb0c9;
+}
+aside {
+  padding: 24px;
+  background: #111925;
+  border: 1px solid #253046;
+  border-radius: 14px;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr) 250px;
+  gap: 18px;
+}
+.track {
+  padding: 18px;
+  border: 1px solid #344155;
+  border-radius: 10px;
+  min-height: 88px;
+}
+.block {
+  margin: 8px 8px 0 0;
+  text-align: left;
+}
+.selected {
+  border-color: #49a3ff;
+  background: #123a64;
+}
+small {
+  color: #91a5c0;
+}
+@media (max-width: 1000px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 16px !important;
+  }
+}
